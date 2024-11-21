@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Dark-Blue);
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 30px;
+    border-radius: 10px;
+    gap: 30px;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+}
+
+.container p {
+    color: var(--Neon-Green);
+    letter-spacing: 4px;
+}
+
+.container h1 {
+    color: var(--Light-Cyan);
+    font-size: 28px;
+}
+
+.container .pattern {
+    margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.container .dice-next {
+    position: absolute;
+    bottom: -25px;
+    left: 228px;
+    background: var(--Neon-Green);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+    display: grid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .dice-next:hover {
+    box-shadow: 0px 0px 30px var(--Neon-Green);
+}
+
+.mob-pattern {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 400px;
+    }
+
+    .desk-pattern {
+        display: none;
+    }
+
+    .mob-pattern {
+        display: block;
+    }
+
+    .container .dice-next {
+        left: 175px;
+    }
+}

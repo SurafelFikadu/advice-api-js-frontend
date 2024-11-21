@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Advice generator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>ADVICE #117</p>
+      <div class="h1">
+        <h1 id="advice">
+          "It is easy to sit up and take notice, what's difficult is getting up
+          and taking action."
+        </h1>
+      </div>
+      <div class="pattern">
+        <img
+          class="desk-pattern"
+          src="./images/pattern-divider-desktop.svg"
+          alt=""
+        />
+        <img
+          class="mob-pattern"
+          src="./images/pattern-divider-mobile.svg"
+          alt=""
+        />
+      </div>
+      <div onclick="getAdvice()" class="dice-next">
+        <img src="./images/icon-dice.svg" alt="" />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
